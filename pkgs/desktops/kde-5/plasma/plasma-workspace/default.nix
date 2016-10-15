@@ -21,7 +21,8 @@ plasmaPackage {
     knotifyconfig kpackage krunner ktexteditor ktextwidgets kwallet kwayland
     kwin kxmlrpcclient libkscreen libksysguard networkmanager-qt phonon
     plasma-framework qtgraphicaleffects qtquickcontrols qtscript qtx11extras
-    solid isocodes libdbusmenu libSM libXcursor pam wayland
+    solid isocodes libdbusmenu libSM libXcursor pam wayland xcb-util 
+    xcb-util-image
   ];
 
   patches = copyPathsToStore (lib.readPathsFromFile ./. ./series);
